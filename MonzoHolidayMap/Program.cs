@@ -35,10 +35,9 @@ namespace MonzoHolidayMap
             Console.Write(response.StatusCode);
 
             LogRequest(request, response, client);
-
-            Console.ReadLine();
+ 
         }
-
+        
         private static void LogRequest(IRestRequest request, IRestResponse response, RestClient restClient)
         {
             var requestToLog = new
